@@ -11,3 +11,6 @@ def setupEnv(String appName) {
 def call(Map args = [:]) {
     return setupEnv(args.app ?: 'default-app')
 }
+
+// **IMPORTANT**: return 'this' so load() returns an object
+return this
