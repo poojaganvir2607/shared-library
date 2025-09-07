@@ -11,4 +11,5 @@ def process(Map setupData) {
 def call(Map args = [:]) {
     return process(args.data ?: [:])
 }
-
+// **important**
+return this
