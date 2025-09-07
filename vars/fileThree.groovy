@@ -12,3 +12,5 @@ def call(Map args = [:]) {
     return deploy(args.artifact ?: 'unknown', args.env ?: 'dev')
 }
 
+// IMPORTANT: return this to make 'load' work
+return this
